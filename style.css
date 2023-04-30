@@ -12,7 +12,6 @@ body{
 header{
 	width: 100%;
 	background-color: #e1edd1;
-	padding: 20px;
 }
 
 .logo{
@@ -23,14 +22,12 @@ header{
 
 nav{
 	background-color: #A5E54D;
-	padding: 3px;
 }
 
 nav ul{
 	list-style-type: none;
 	text-align: center;
-	margin: 10px 0px;
-	font-size: 1.25em;
+	font-size: 1.05em;
 }
 
 nav li{
@@ -50,22 +47,12 @@ main{
 	background-image: url(images/background.jpg);
 	background-size: cover;
 	max-width: 1200px;
-	padding: 20px 0;
+	padding: 10px 0;
 	margin: auto;
 }
 
 .home-column {
 	padding: 0 100px;
-}
-
-.home-passion{
-	padding-top: 50px;
-	text-align: center;
-}
-
-.home-passion .fa{
-	color: #78bf49;
-	font-size: 5em;
 }
 
 .home-passion p{
@@ -76,7 +63,7 @@ main{
 	display: block;
 	text-align: center;
 	margin: auto;
-	padding: 20px;
+	padding: 40px;
 	border-radius: 70%;
 	background-color: #e1edd1;
 	color: #78bf49;
@@ -101,6 +88,17 @@ main{
 	font-size: 15px;
 }
 
+.home-passion{
+	padding-top: 80px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.home-passion .fa{
+	color: #78bf49;
+	font-size: 5em;
+}
+
 .menu-welcome{
 	text-align: center;
 	color: #78bf49;
@@ -116,8 +114,14 @@ main{
 	line-height: 0.7;
 }
 
+hr{
+	border: 10px solid #78bf49;
+	border-radius: 5px;
+	margin: 50px 0;
+}
+
 .form-welcome{
-	color: #78bf49;
+	color: #303030;
 	text-align: center;
 }
 
@@ -157,7 +161,7 @@ label[for="comments"]{
 }
 
 .location-welcome{
-	color: #78bf49;
+	color: #303030;
 	text-align:center;
 }
 
@@ -189,6 +193,11 @@ td{
 	padding: 10px;
 	background-color: #e1edd1;
 }
+
+h2{
+	color: #303030;
+}
+	
 
 .footer-column{
 	width: 1200px;
