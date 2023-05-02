@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, 
 	initial-scale=1, minimum-scale=1" />
 	<title> Facade Feast </title>
-	<meta name="description" content="Reservation Reserve a table Facade Feast 
-	This is a final project for CSCI 1540 Web Fundementals/HTML">
+	<meta name="description" content="Location Address and Business Hours of Facade Feast, an imaginary restaurant.
+	This is a final project for CSCI 1540 Web Fundementals/HTML.">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
@@ -15,19 +15,16 @@
 
 <body>
 	<header>
-		<img src="images/logolong.png" alt="logo" height="211px" width="107px" class="img-fluid logo">
+		<img src="images/logolong.png" alt="logo" height="212px" width="108px" class="img-fluid logo">
 	</header>
-	
 	<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="menu.html">Menu</a></li>
 			<li><a href="location.html">Location and Business Hour</a></li>
 			<li><a href="reservation.html">Reservation</a></li>
-			
 		</ul>
 	</nav>
-
 	<main>
 		<div class="container-fluid">
 			<div class="row">
@@ -42,27 +39,33 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="column">
-						<form method="post" 
-							action="https://webdevstudents.com/portfolio/submit-form.php">
-						<fieldset>
-						<legend>Guest Information</legend>
-								<label for="first_name">*First Name</label> 
-								<input type="text" id="first_name" name="first_name" required="required">
-								<label for="last_name">*Last Name</label> 
-								<input type="text" id="last_name" name="last_name" required="required">
-								<label for="email">*Email</label> 
-								<input type="email" id="email" name="email" required="required">
-								<label for="phone">*Phone</label> 
-								<input type="tel" id="phone" name="phone" required="required">
-								<label for="howmany">Reserve for</label>
+						<form action="/action_page.php">
+							<div class="form-group">
+								<label for="name">Reserve a table for</label>
+								<input type="name" name="name" id="name" placeholder="Enter your name" required="required">
+							</div>
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input type="email" name="email" id="email" placeholder="Enter your email">
+							</div>
+							<div class="form-group">
+								<label for="phone">Phone number:</label>
+								<input type="phone" name="phone" id="phone" placeholder="Enter your phone number" required="required">
+							</div>
+							<div class="form-group">
+								<label for="howmany">How many people are in your party?</label>
 								<input type="number" id="howmany" name="howmany" required="required" min="1" max="15">
-								<label for="when">Reserve your table at</label>
+							</div>
+							<div class="form-group">
+								<label for="howmany">Reserve your table at</label>
 								<input type="datetime-local" id="when" name="when">
-
-						</fieldset>
+							</div>
+							<div class="form-group">
 								<label for="comments">Comment</label> 
 								<textarea id="comments" name="comments" cols="105" rows="2"></textarea>
-								<input type="submit" value="Submit">
+							</div>
+							
+							<button type="submit" class="btn btn-default">Reserve</button>
 						</form>
 					</div>
 				</div>

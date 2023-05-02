@@ -7,16 +7,19 @@
 body{
 	font-family: 'Kanit', sans-serif;
 	background-color: #e1edd1;
+	padding-top: 54px;
 }
 
 header{
 	width: 100%;
 	background-color: #e1edd1;
+	position: fixed;
+	top: 0;
 }
 
 .logo{
 	margin: 0 auto;
-	display:block;
+	display: block;
 }
 
 
@@ -125,40 +128,6 @@ hr{
 	text-align: center;
 }
 
-form {
-	margin: 50px;
-}
-
-fieldset{
-	margin-bottom: 20px;
-}
-
-legend{
-	font-size: 20px;
-	padding: 0 14px;
-	color: #729641;
-}
-
-label{
-	float: left;
-	width: 200px;
-	padding-left: 1em;
-	color: #cc3f23;
-}
-
-input, textarea{
-	margin-bottom: 1em;
-	display: block;
-}
-
-input[type=submit]{
-	display: block;
-	background-color: #A5E54D;
-}
-
-label[for="comments"]{
-	padding: 1em;
-}
 
 .location-welcome{
 	color: #303030;
@@ -221,9 +190,5 @@ footer{
 	background-color: #A5E54D;
 }
 
-@media only screen and (min-width: 750px){
+@media only screen and (max-width: 768px){
 	
-
-@media only screen and (min-width: 1024px){
-	
-}
