@@ -204,7 +204,15 @@ h1{
 h3{
 	font-size: 25px;
 }
-	
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 
 .footer-column{
 	max-width: 1200px;
